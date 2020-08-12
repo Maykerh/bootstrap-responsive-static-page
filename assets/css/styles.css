@@ -421,3 +421,47 @@
 	color: #555555;
 	margin-bottom: 0rem;
 }
+
+/**
+ * Contact
+ */
+
+.contact .contact-card {
+	box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+	margin: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact .contact-card-icon {
+	border: 3px solid #106eea30;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 1px;
+}
+
+.contact .contact-card-icon i {
+	color: #106eea;
+	font-size: 32px;
+}
+
+.contact .contact-card h3 {
+	font-size: 20px;
+	color: #777777;
+	font-weight: 700;
+	margin: 10px 0;
+}
+
+.contact .contact-card p {
+	padding: 0;
+	line-height: 24px;
+	font-size: 14px;
+	margin-bottom: 0;
+}
