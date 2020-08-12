@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+		<title>Bootstrap</title>
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://use.fontawesome.com/eccf9cf7f5.js"></script>
+
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+	</head>
+	<body>
+		<header id="main-header">
+			<div class="container d-flex align-items-center">
+				<h1 class="mr-auto logo"><a href="#">BizLand</a></h1>
+
+				<button
+					type="button"
+					class="mobile-menu-button d-lg-none"
+					data-toggle="modal"
+					data-target="#header-menu-modal"
+				>
+					<i class="fa fa-bars"></i>
+				</button>
+
+				<div
+					class="modal fade"
+					id="header-menu-modal"
+					tabindex="-1"
+					role="dialog"
+					aria-labelledby="headerMenuModal"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Menu</h5>
+								<button
+									type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div id="mobile-header-menu-body" class="modal-body"></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="header-menu-body" class="modal-body d-none d-lg-block">
+					<nav id="header-menu-nav" class="header-menu">
+						<ul>
+							<li class="active">Home</li>
+							<li>Sobre</li>
+							<li>Produtos</li>
+							<li>Serviços</li>
+							<li>Contato</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main>
+			<!-- <section id="intro" class="d-flex align-items-center">
+				<div class="container">
+					<h1>Bem vindo a <span>BizLand</span></h1>
+					<h2>
+						Somos um time massa Somos um time massa Somos um time massa Somos um time
+						massa
+					</h2>
+					<div class="d-flex">
+						<a href="#about" class="btn-default scrollto">SOBRE</a>
+					</div>
+				</div>
+			</section>
+			<section id="services" class="services d-flex align-items-center">
+				<div class="container">
+					<div class="service-card d-flex flex-column align-items-left">
+						<div class="icon d-flex"><i class="fa fa-file-text-o"></i></div>
+						<h4>Serviço top</h4>
+						<p>
+							Voluptatum deleniti atque corrupti quos dolores et quas molestias
+							excepturi
+						</p>
+					</div>
+					<div class="service-card d-flex flex-column align-items-left">
+						<div class="icon d-flex"><i class="fa fa-file-text-o"></i></div>
+						<h4>Serviço top</h4>
+						<p>
+							Voluptatum deleniti atque corrupti quos dolores et quas molestias
+							excepturi
+						</p>
+					</div>
+					<div class="service-card d-flex flex-column align-items-left">
+						<div class="icon d-flex"><i class="fa fa-file-text-o"></i></div>
+						<h4>Serviço top</h4>
+						<p>
+							Voluptatum deleniti atque corrupti quos dolores et quas molestias
+							excepturi
+						</p>
+					</div>
+				</div>
+			</section> -->
+			<!-- <section id="about" class="about">
+				<div class="container d-flex flex-column align-items-center">
+					<div class="section-title">
+						<h3>Leia Mais <span>Sobre Nós</span></h3>
+						<p>
+							Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+							adipisci expedita at voluptas atque vitae autem.
+						</p>
+					</div>
+					<img src="./assets/img/about-1.jpg" alt="sobre" class="img-fluid" />
+					<div class="about-content">
+						<h3>
+							Voluptatem dignissimos provident quasi corporis voluptates sit
+							assumenda.
+						</h3>
+						<p>
+							Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+							adipisci expedita at voluptas atque vitae autem.
+						</p>
+						<div class="about-card d-flex">
+							<div class="icon d-flex"><i class="fa fa-file-text-o"></i></div>
+							<div class="about-card-text">
+								<h4>Ullamco laboris nisi ut aliquip consequat</h4>
+								<p>
+									Magni facilis facilis repellendus cum excepturi quaerat
+									praesentium libre trade
+								</p>
+							</div>
+						</div>
+						<div class="about-card d-flex">
+							<div class="icon d-flex"><i class="fa fa-file-text-o"></i></div>
+							<div class="about-card-text">
+								<h4>Ullamco laboris nisi ut aliquip consequat</h4>
+								<p>
+									Magni facilis facilis repellendus cum excepturi quaerat
+									praesentium libre trade
+								</p>
+							</div>
+						</div>
+						<p>
+							Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+							dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+							nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum
+						</p>
+					</div>
+				</div>
+			</section> -->
+			<section id="clients" class="clients">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+						>
+							<img src="assets/img/clients/client-1.png" class="img-fluid" />
+						</div>
+
+						<div
+							class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+						>
+							<img src="assets/img/clients/client-2.png" class="img-fluid" />
+						</div>
+
+						<div
+							class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+						>
+							<img src="assets/img/clients/client-3.png" class="img-fluid" />
+						</div>
+
+						<div
+							class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+						>
+							<img src="assets/img/clients/client-4.png" class="img-fluid" />
+						</div>
+
+						<div
+							class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+						>
+							<img src="assets/img/clients/client-5.png" class="img-fluid" />
+						</div>
+
+						<div
+							class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+						>
+							<img src="assets/img/clients/client-6.png" class="img-fluid" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section id="testimonials" class="testimonials">
+				<div class="container testimonials-container w-100">
+					<div class="testimonials-overlay h-100 w-100">
+						<div
+							id="carouselExampleIndicators"
+							class="carousel slide h-100"
+							data-ride="carousel"
+						>
+							<ol class="carousel-indicators">
+								<li
+									data-target="#carouselExampleIndicators"
+									data-slide-to="0"
+									class="active"
+								></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner h-100">
+								<div class="carousel-item active h-100">
+									<div class="testimonial-item">
+										<img
+											src="assets/img/testimonials/testimonial-1.jpg"
+											alt="Testimonial image"
+										/>
+										<div class="testimonial-name">
+											<h5>Anne Bowman</h5>
+											<p>Ceo</p>
+										</div>
+										<div class="testimonial-description">
+											<blockquote>
+												<p>
+													Ut suscipit ultricies nisi. Ut sit amet neque ut
+													enim aliquet dictum quis quis nunc. In porttitor
+													imperdiet molestie. Vestibulum massa ex, congue
+													non facilisis at, tempus quis erat. Vestibulum
+													dapibus iaculis convallis. Sed posuere lorem id
+													eros vehicula vehicula. Cras nisl sem, porttitor
+													vitae semper at, semper vitae nibh
+												</p>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item h-100">
+									<div class="testimonial-item">
+										<img
+											src="assets/img/testimonials/testimonial-2.jpg"
+											alt="Testimonial image"
+										/>
+										<div class="testimonial-name">
+											<h5>Ivan Santos</h5>
+											<p>Gerente de projetos</p>
+										</div>
+										<div class="testimonial-description">
+											<blockquote>
+												<p>
+													Cras nisl sem, porttitor vitae semper at, semper
+													vitae nibh Ut suscipit ultricies nisi. Ut sit
+													amet neque ut enim aliquet dictum quis quis
+													nunc. In porttitor imperdiet molestie.
+													Vestibulum massa ex, congue non facilisis at,
+													tempus quis erat. Vestibulum dapibus iaculis
+													convallis.Ut suscipit ultricies nisi. Ut sit
+													amet neque ut enim aliquet dictum quis quis
+													nunc. In porttitor imperdiet molestie.
+													Vestibulum massa ex, congue non facilisis at,
+													tempus quis erat. Vestibulum dapibus iaculis
+													convallis. Sed posuere lorem id eros vehicula
+													vehicula.
+												</p>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item h-100">
+									<div class="testimonial-item">
+										<img
+											src="assets/img/testimonials/testimonial-3.jpg"
+											alt="Testimonial image"
+										/>
+										<div class="testimonial-name">
+											<h5>Ricardo Alves</h5>
+											<p>Analista de compras</p>
+										</div>
+										<div class="testimonial-description">
+											<blockquote>
+												<p>
+													Aenean tristique velit et sapien volutpat
+													maximus. Donec consectetur consectetur lorem,
+													eget iaculis justo cursus in. Nunc cursus
+													dapibus hendrerit. Nam fermentum turpis non
+													metus finibus tincidunt. Nulla semper lorem
+													vitae malesuada vehicula. Maecenas nibh ante,
+													convallis eu nunc ut, accumsan ultrices sem.
+													Pellentesque hendrerit purus non pretium
+													ultrices
+												</p>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<!-- <section id="catalog" class="catalog">
+				<div class="container">
+					<div class="section-title">
+						<h3>Confira nosso <span>Catálogo</span></h3>
+						<p>
+							Possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci
+							expedita at voluptas atque vitae autem.
+						</p>
+					</div>
+
+					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								id="pills-networks-tab"
+								data-toggle="pill"
+								href="#pills-networks"
+								role="tab"
+								aria-controls="pills-networks"
+								aria-selected="true"
+								>Redes</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								id="pills-telephony-tab"
+								data-toggle="pill"
+								href="#pills-telephony"
+								role="tab"
+								aria-controls="pills-telephony"
+								aria-selected="false"
+								>Telefonia</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								id="pills-monitoring-tab"
+								data-toggle="pill"
+								href="#pills-monitoring"
+								role="tab"
+								aria-controls="pills-monitoring"
+								aria-selected="false"
+								>Monitoramento</a
+							>
+						</li>
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div
+							class="tab-pane fade show active"
+							id="pills-networks"
+							role="tabpanel"
+							aria-labelledby="pills-networks-tab"
+						>
+							<div class="catalog-card">
+								<img
+									src="assets/img/portfolio/portfolio-1.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+								<div class="catalog-card-info">
+									<h4>Card 1</h4>
+									<p>Card 1</p>
+								</div>
+							</div>
+							<div class="catalog-card">
+								<img
+									src="assets/img/portfolio/portfolio-2.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+								<div class="catalog-card-info">
+									<h4>Card 2</h4>
+									<p>Card 2</p>
+								</div>
+							</div>
+							<div class="catalog-card">
+								<img
+									src="assets/img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+								<div class="catalog-card-info">
+									<h4>Card 3</h4>
+									<p>Card 3</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="pills-telephony"
+							role="tabpanel"
+							aria-labelledby="pills-telephony-tab"
+						>
+							<div class="catalog-card">
+								<img
+									src="assets/img/portfolio/portfolio-4.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+								<div class="catalog-card-info">
+									<h4>Card 1</h4>
+									<p>Card 1</p>
+								</div>
+							</div>
+							<div class="catalog-card">
+								<img
+									src="assets/img/portfolio/portfolio-5.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+								<div class="catalog-card-info">
+									<h4>Card 2</h4>
+									<p>Card 2</p>
+								</div>
+							</div>
+							<div class="catalog-card">
+								<img
+									src="assets/img/portfolio/portfolio-6.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+								<div class="catalog-card-info">
+									<h4>Card 3</h4>
+									<p>Card 3</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="pills-monitoring"
+							role="tabpanel"
+							aria-labelledby="pills-monitoring-tab"
+						>
+							<div class="catalog-card">
+								<img
+									src="assets/img/portfolio/portfolio-7.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+								<div class="catalog-card-info">
+									<h4>Card 1</h4>
+									<p>Card 1</p>
+								</div>
+							</div>
+							<div class="catalog-card">
+								<img
+									src="assets/img/portfolio/portfolio-8.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+								<div class="catalog-card-info">
+									<h4>Card 2</h4>
+									<p>Card 2</p>
+								</div>
+							</div>
+							<div class="catalog-card">
+								<img
+									src="assets/img/portfolio/portfolio-9.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+								<div class="catalog-card-info">
+									<h4>Card 3</h4>
+									<p>Card 3</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<!-- <section id="team" class="team">
+				<div class="container">
+					<div class="section-title">
+						<h3>Conheça nosso <span>Time</span></h3>
+						<p>
+							Possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci
+							expedita at voluptas atque vitae autem.
+						</p>
+					</div>
+
+					<div class="card member-card">
+						<img
+							class="card-img-top"
+							src="assets/img/team/team-1.jpg"
+							alt="Card image cap"
+						/>
+						<div class="card-body member-info">
+							<h4>Ivan Mood</h4>
+							<p>Diretor Executivo</p>
+						</div>
+					</div>
+					<div class="card member-card">
+						<img
+							class="card-img-top"
+							src="assets/img/team/team-2.jpg"
+							alt="Card image cap"
+						/>
+						<div class="card-body member-info">
+							<h4>Cristina Silva</h4>
+							<p>Diretora Executiva</p>
+						</div>
+					</div>
+					<div class="card member-card">
+						<img
+							class="card-img-top"
+							src="assets/img/team/team-3.jpg"
+							alt="Card image cap"
+						/>
+						<div class="card-body member-info">
+							<h4>Robert Anderson</h4>
+							<p>Gerente de vendas</p>
+						</div>
+					</div>
+				</div>
+			</section> -->
+		</main>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
